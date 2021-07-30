@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 mx-auto text-center">
+            <div class="section-title mb-2">
+
+                <h5>Latest Updates</h5>
+                <a routerLink="/blogList" class="float-right btn btn-sm m-0 mt-2 btn-danger text-light">View →</a>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-2" id="row-blog-recomendation" >
+
+        <div class="col-lg-4 col-md-6 mb-1 cardStyle" *ngFor="let blog of BlogList">
+            <app-blog [blog]=blog></app-blog>
+            </div>            
+        </div>
+    

@@ -1,0 +1,18 @@
+<div class="text-center" >
+    <div class="spinner-border text-secondary" role="status" style="width: 3rem; height: 3rem;" *ngIf="show">
+        <span class="sr-only">Loading...</span>
+      </div>
+</div>
+
+<div class="container">
+    <div class="row mt-2" id="row-blog-recomendation">
+        <div class="col-lg-4 col-md-6 mb-1 cardStyle" *ngFor="let blog of BlogList">
+            <app-blog [blog]=blog></app-blog>
+        </div>
+    </div>
+</div>
+
+<div class="text-center m-4" *ngIf="moreDeals">
+    <button class="btn btn-secondary" (click)="MoreDeal()" style="background-color: darkslategrey;">More Deals</button>
+</div>
+

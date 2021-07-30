@@ -1,0 +1,45 @@
+<br>
+<div class="container">
+    <h2 class="text-success">View Deals</h2>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>                        
+                        <th>Image</th>
+                        <th>Product Name</th>
+                        <th>Offer Price</th>
+                        <th>Actual Price</th>
+                        <th>Edit Deal</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let pro of ProductList; index as i">                        
+                        <td><img src="deal/{{pro.image}}"" alt="image" width="70" /></td>
+                        <td>{{pro.name}}</td>
+                        <td>{{pro.offer_price}}</td>
+                        <td>{{pro.actual_price}}</td>
+                        <td><button class="btn btn-success" (click)="EditDeal(pro)">Edit Deal</button></td>
+                        <td><button class="btn btn-danger" (click)="DeleteDeal(pro.id)" >Remove Deal</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item" *ngIf="pageNumber !== 1">
+            <a class="page-link" (click)="MoreDeal('previous')" tabindex="-1">Previous</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" (click)="MoreDeal('next')" >Next</a>
+          </li>
+        </ul>
+      </nav>
+
+    
+
+</div> 
+<br>

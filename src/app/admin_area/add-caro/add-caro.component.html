@@ -1,0 +1,14 @@
+<div class="container mt-2">
+  <form (ngSubmit)="onSubmit()" #blogForm="ngForm">
+      <div class="form-group">
+          <input type="text" class="form-control" [(ngModel)]="caro.image" #image="ngModel"  name="image" aria-describedby="heading1"
+              placeholder="Image Link"required>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" [(ngModel)]="caro.url" #url="ngModel"  name="url" aria-describedby="heading1"
+            placeholder="Url"required>
+    </div>      
+      
+      <button type="submit" class="btn btn-primary" [disabled]="!blogForm.form.valid">{{buttonValue}}</button>
+  </form>
+</div>

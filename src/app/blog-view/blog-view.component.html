@@ -1,0 +1,74 @@
+
+<div class="text-center" >
+    <div class="spinner-border text-secondary" role="status" style="width: 3rem; height: 3rem;" *ngIf="show">
+        <span class="sr-only">Loading...</span>
+      </div>
+</div>
+
+<div class="container mt-2" >
+    <div class="row" *ngIf="Blog">
+
+        <div class="col-md-12 col-lg-8" style="height: auto !important; min-height: 0px !important;">
+            <h3 class="mt-30"><b>{{Blog.heading}}</b></h3>
+            
+            <ul class="list-li-mr-20 mtb-15" style="list-style-type: none;">
+                <li>by <b>{{Blog.author}} </b>{{Blog.date}}</li>
+               
+            </ul>
+            <img src="{{Blog.img}}" alt="" style="width: 100%;"
+                class="img-responsive" />
+            <h4><b>{{Blog.hp1}}</b></h4>
+            <hr>
+
+            <p class="mtb-15" style="height: auto !important;"> </p>
+
+            <h4><b>{{Blog.hp2}}</b></h4>
+            <hr>
+            <img src="{{Blog.ip2}}" alt="" style="width: 100%;"
+                class="img-responsive" />
+            <p class="mtb-15" style="height: auto !important;">{{Blog.para2}} </p>
+            <!-- float-left-right -->
+
+            <h4><b>{{Blog.hp3}}</b></h4>
+            <hr>
+            <img src="{{Blog.ip3}}" alt="" style="width: 100%;"
+                class="img-responsive" />
+            <p class="mtb-15" style="height: auto !important;"> {{Blog.para3}} </p>
+
+
+                <div class="brdr-ash-1 opacty-5"></div>
+
+                <!-- <h4 class="p-title mt-50"><b>YOU MAY ALSO LIKE</b></h4> -->
+                <div class="row">
+
+
+                </div><!-- row -->           
+        </div><!-- row -->
+
+        <div class="d-none d-md-block d-lg-none col-md-3">   
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <div class="pl-20 pl-md-0">
+
+                <div class="mtb-50">
+                    <h4 class="p-title"><b>POPULAR POSTS</b></h4>
+                    <hr class="popular"> <br>
+                    
+                    <a class="oflow-hidden pos-relative mb-2 dplay-block" *ngFor="let blog of BlogList">
+                        <div class="wh-100x abs-tlr ">
+                            <img src="{{blog.img}}" alt="" [routerLink]="['/blog' , blog.id]"
+                                width="50px" height="75px" class="img-responsive"></div>
+                        <div class="ml-120 min-h-100x ">
+                            <a (click)="ViewBlog(blog)" ><h6 ><b>{{blog.heading}}</b></h6></a>
+                            <p class="color-lite-black pt-10">by <span class="color-black"><b>{{blog.author}}</b></span><br>&nbsp;&nbsp;&nbsp;{{blog.date}}</p>
+                        </div>
+                    </a><!-- oflow-hidden -->                    
+                </div><!-- mtb-50 -->
+
+
+
+            </div><!--  pl-20 -->
+        </div>       
+        <!-- col-md-3 -->
+    </div>
+</div>

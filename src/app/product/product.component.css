@@ -1,0 +1,57 @@
+span.big {
+    font-size: 120%;
+  }
+
+label.ProductName {
+    font-size: 125%;
+
+}
+
+.border {
+
+    position: relative; 
+    top: 10px; 
+    border: none;    
+}
+
+.MainImage {
+    padding: 1px 3px;
+    cursor: pointer;
+    width: auto;
+    height: 140px;
+    display: block;
+    margin: 0 auto;
+    object-fit: scale-down;
+    margin-bottom: 30px;
+  }
+
+  /* .img {
+    vertical-align: middle;
+
+  } */
+
+.big1 {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.fix-bottom {
+    position: fixed!important;
+    z-index: 999;
+    text-align: center;
+    
+}
+
+/* * {
+    font-family: unset!important;
+} */
+
+
+
+
+
+
+
+
+
+

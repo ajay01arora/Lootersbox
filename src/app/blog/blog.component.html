@@ -1,0 +1,18 @@
+            
+            
+            <div class="single-blog bg-white mr-3 mb-3">
+                <div class="card">
+                    <img class="card-img-top img-responsive" src={{blog.img}} alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">{{(blog.heading | slice:0:35) + (blog.heading.length > 25 ? '...' : '')}}</h4>
+                        <p class="card-text">{{(blog.heading) + (blog.heading.length > 35 ? '...' : '')}}
+                        </p>
+                        <a (click)="ViewBlog(blog)" class="btn btn-success" style="background-color: darkslategrey; color: white;">Read More →</a>
+                        <div class="">
+                           <span>{{blog.date}}</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+       

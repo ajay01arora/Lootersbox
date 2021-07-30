@@ -1,0 +1,50 @@
+
+<div class="fluid-container">
+    <nav class="navbar navbar-expand-md " style="background-color: darkslategrey">
+        <a routerLink="/" class="navbar-brand">
+            <!-- <img src="assets\logo.jpg" height="28" alt="LootersBox"> -->
+            <h2 style="margin-left: 50px; "><strong>LootersBox</strong> <span class="thin">.com</span> </h2>
+        </a>
+
+        <button type="button" class="navbar-toggler navbar-light" data-toggle="collapse" data-target="#navbarCollapset"  aria-controls="main-nav" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" ></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapset">
+            <div class="navbar-nav">
+                <a routerLink="/" class="nav-item nav-link active">Just&nbsp;In</a>
+                <a routerLink="/amazon" class="nav-item nav-link">Amazon</a>                
+            </div>
+
+            <div class="navbar-nav ml-auto mr-4" >      
+                
+            </div>
+        </div>
+        <div class="input-group md-form form-sm form-2 pl-1">
+            <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" [(ngModel)]=Keyword name="search2" required aria-label="Search">
+            <div class="input-group-append">
+              <span class="input-group-text red lighten-3" (click)="SearchProduct()" id="basic-text1"><i class="fas fa-search text-grey"
+                  aria-hidden="true"></i></span>
+            </div>
+          </div>
+    </nav>
+</div>
+
+<div id="amazon_search_box">
+    <script type="text/javascript">amzn_assoc_ad_type ="responsive_search_widget"; amzn_assoc_tracking_id ="lootersbox-21"; amzn_assoc_marketplace ="amazon"; amzn_assoc_region ="IN"; amzn_assoc_placement =""; amzn_assoc_search_type = "search_widget";amzn_assoc_width ="auto"; amzn_assoc_height ="auto"; amzn_assoc_default_search_category =""; amzn_assoc_default_search_key ="";amzn_assoc_theme ="light"; amzn_assoc_bg_color ="FFFFFF"; </script><script src="//z-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&Marketplace=IN"></script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

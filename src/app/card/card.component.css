@@ -1,0 +1,36 @@
+#time {
+    color: red;
+  }
+
+  span.big {
+    font-size: 140%;
+  }
+
+  .card-text {
+    font-size: 70%;
+
+  }
+
+  .card-header{
+    border: none;
+  }
+
+  .postthumb {
+    padding: 1px 3px;
+    cursor: pointer;
+    width: auto;
+    height: 140px;
+    display: block;
+    margin: 0 auto;
+    object-fit: scale-down;
+  }
+
+  .img {
+    vertical-align: middle;
+
+  }
+
+  .card-body{
+    cursor: pointer;
+  }
+
